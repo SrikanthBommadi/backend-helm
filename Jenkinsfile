@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'jenkins-agent' }
     environment { 
-        PROJECT = '##'
+        PROJECT = 'cluster'
         COMPONENT = 'backend' 
         DEPLOY_TO = "production"
         REGION = "us-east-1"
@@ -33,7 +33,7 @@ pipeline {
                 script{
                     withAWS(region: 'us-east-1', credentials: 'aws') {
                         sh """
-                            aws eks update-kubeconfig --region $REGION --name expense-dev
+                            aws eks update-kubeconfig --region $REGION --name cluster-developer
                             kubectl get nodes
                             cd helm
                             sed -i 's/IMAGE_VERSION/${params.version}/g' values-${environment}.yaml
