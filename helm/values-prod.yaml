@@ -1,0 +1,4 @@
+deployment:
+  version: 1.0.0
+  image: joindevops/backend:1.0.0
+  replicas: 1

@@ -1,0 +1,5 @@
+configmap:
+  db_host: ## rds host
+deployment:
+  imageURL: ## image url
+  version: IMAGE_VERSION
