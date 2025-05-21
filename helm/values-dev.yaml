@@ -1,5 +1,5 @@
 configmap:
-  db_host: ## rds host
+  db_host: cluster-developer.clwyo2mqeq2v.us-east-1.rds.amazonaws.com
 deployment:
-  imageURL: ## image url
+  imageURL: 010526266250.dkr.ecr.us-east-1.amazonaws.com/cluster/backend
   version: IMAGE_VERSION
