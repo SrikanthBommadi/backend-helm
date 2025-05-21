@@ -8,7 +8,7 @@ metadata:
     tier: backend
     project: project
 spec:
-  replicas: {{ .Values.deployment.replicas }}
+  replicas: 1 ## {{ .Values.deployment.replicas }}
   selector: 
     matchLabels:
       app: backend

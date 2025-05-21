@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'jenkins-agent' }
     environment { 
-        PROJECT = 'cluster'
+        PROJECT = 'project'
         COMPONENT = 'backend' 
         DEPLOY_TO = "production"
         REGION = "us-east-1"
